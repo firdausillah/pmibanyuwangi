@@ -14,9 +14,6 @@
 <body>
     <div class="header">
         <img src="assets/logo_jumbara.png" alt="Logo PMR" class="logo">
-        <!-- <img src="https://via.placeholder.com/120x120.png?text=PMR" alt="Logo PMR" class="profile-pic"> -->
-        <!-- <h1>Jumbara PMR</h1> -->
-        <!-- <p>Informasi & Tautan Seputar Kegiatan</p> -->
     </div>
 
     <div class="linktree">
@@ -26,19 +23,24 @@
         <a href="#">📍 Lokasi & Denah Acara</a>
         <a href="https://www.instagram.com/pmibanyuwangi/" target="_blank">📸 Galeri PMI Kab. Banyuwangi</a>
         <a href="#">📢 Pengumuman Penting</a>
-    </div>
 
-    <!-- <div class="info-box">
-        <h2>📆 Tanggal Kegiatan</h2>
-        <p>Sabtu - Minggu, 18-19 Mei 2025</p>
-        <h2>📍 Lokasi</h2>
-        <p>Bumi Perkemahan Cibubur, Jakarta Timur</p>
-    </div> -->
+    </div>
 
     <footer>
         &copy; 2025 Palang Merah Indonesia 
         <br> Dibuat dengan <a href="https://aruna-project.vercel.app" class="love">❤️</a> PMI Kab. Banyuwangi
     </footer>
 </body>
+
+<script>
+    const accordionBtn = document.querySelector('.accordion-btn');
+    const accordionContent = document.querySelector('.accordion-content');
+
+    accordionBtn.addEventListener('click', () => {
+        accordionContent.style.display =
+            accordionContent.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+
 
 </html>
